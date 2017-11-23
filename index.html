@@ -1,48 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="utf-8">
-  <title>particles.js</title>
+  <title>Matthew Stafford's Website</title>
   <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
-  <meta name="author" content="Vincent Garreau" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" media="screen" href="css/style.css">
 </head>
+
 <body>
+  <!-- my data -->
+  <div style="text-align:center;margin:2%;position:absolute; opacity: 0.95;height:75%;width:25%;top:0; left:0%; color:blue; font-size:34px; z-index:2; font-family:arial;background:black;">
+    <img src="pics/stemup.jpg" width="90%"> Matthew Stafford
+    <div style="text-align:left;margin-left:20%;font-size:20px;">
+      <div><a href="https://github.com/matt2929"><i class="fa fa-github"> matt2929</i></a></div>
+      <div><a href="https://www.linkedin.com/in/matthew-stafford-4a27a312b/"><i class="fa fa-linkedin"> matt2929</i></a></div>
+      <div><i class="fa fa-envelope"> mcstaffo@buffalo.edu</i></div>
+      <div><a href="docs/resume.pdf"><i class="fa fa-file-text-o"> resume.pdf</i></a></div>
+    </div>
 
-<!-- count particles -->
-<div class="count-particles">
-  <span class="js-count-particles">--</span> particles
-</div>
+  </div>
 
-<!-- particles.js container -->
-<div id="particles-js"></div>
+  <!-- particle stuff -->
+  <div class="count-particles" style="position:absolute; top:0; left:0; font-size:50px; z-index:1;">
+    <span class="js-count-particles">--</span> particles
+  </div>
+  <!-- particles.js container -->
+  <div id="particles-js" style="position:absolute; top:-50; left:0; font-size:50px; z-index:1;"></div>
+  <!-- scripts -->
+  <script src="particles.js"></script>
+  <script src="js/app.js"></script>
 
-<!-- scripts -->
-<script src="particles.js"></script>
-<script src="js/app.js"></script>
-
-<!-- stats.js -->
-<script src="js/lib/stats.js"></script>
-<script>
-  var count_particles, stats, update;
-  stats = new Stats;
-  stats.setMode(0);
-  stats.domElement.style.position = 'absolute';
-  stats.domElement.style.left = '0px';
-  stats.domElement.style.top = '0px';
-  document.body.appendChild(stats.domElement);
-  count_particles = document.querySelector('.js-count-particles');
-  update = function() {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
-</script>
-
+  <!-- stats.js -->
+  <script src="js/lib/stats.js"></script>
 </body>
+
 </html>
