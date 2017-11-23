@@ -8,16 +8,16 @@
       }
     },
     "color": {
-      "value": "#b2bb24"
+      "value": "#ffffff"
     },
     "shape": {
-      "type": "star",
+      "type": "circle",
       "stroke": {
-        "width": 6,
+        "width": 0,
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 4
+        "nb_sides": 5
       },
       "image": {
         "src": "img/github.svg",
@@ -36,7 +36,7 @@
       }
     },
     "size": {
-      "value": 252.53739958631982,
+      "value": 5,
       "random": true,
       "anim": {
         "enable": false,
@@ -48,18 +48,17 @@
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#0096ff",
+      "color": "#ffffff",
       "opacity": 0.4,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 1.603412060865523,
+      "speed": 6,
       "direction": "none",
-      "random": true,
+      "random": false,
       "straight": false,
       "out_mode": "out",
-      "bounce": false,
       "attract": {
         "enable": false,
         "rotateX": 600,
@@ -95,8 +94,7 @@
         "speed": 3
       },
       "repulse": {
-        "distance": 200,
-        "duration": 0.4
+        "distance": 200
       },
       "push": {
         "particles_nb": 4
@@ -106,5 +104,13 @@
       }
     }
   },
-  "retina_detect": true
+  "retina_detect": true,
+  "config_demo": {
+    "hide_card": false,
+    "background_color": "#b61924",
+    "background_image": "",
+    "background_position": "50% 50%",
+    "background_repeat": "no-repeat",
+    "background_size": "cover"
+  }
 }
