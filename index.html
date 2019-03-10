@@ -9,37 +9,43 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
 </head>
 
 <body>
   <div class="container">
-    <div>
-      <div class="container main">
-
-        <div class="row">
-          <div class="col-2"> </div>
-          <div class="col-8"><img class="picture" style="width: inherit;" src="pics/poster.jpg"> </div>
-          <div class="col-2"></div>
+    <div class="container main">
+      <div class="row">
+        <div class="col-2"> </div>
+        <div class="col-8"><img class="picture" style="width: inherit" src="pics/poster.jpg"> </div>
+        <div class="col-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-2"> </div>
+        <div class="col-8">
+          <h1 class="name">Matthew Stafford</h1>
         </div>
-        <div class="row">
+        <div class="col-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-2"> </div>
+        <div class="col-8" id="card_box">
           <div class="col-2"> </div>
-          <div class="col-8">
-            <h1 class="name">Matthew Stafford</h1>
-          </div>
-            <div class="col-2"></div>
-        </div>
-        <div class="row">
-          <div class="col-2"> </div>
-          <div class="col-8" id="card_box">
-            <div class="col-2"> </div>
-          </div>
         </div>
       </div>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-      <script src="js/main.js"></script>
+      <div class="row">
+        <div class="col-2"> </div>
+        <canvas class="col-8" id="myChart"></canvas>
+        <div class="col-2"> </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/graph.js"></script>
 </body>
 
 </html>

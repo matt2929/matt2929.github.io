@@ -1,26 +1,25 @@
-
-
 .card_info {
   text-align: left;
 }
 
 html body {
-    background-color: rgba(45,45,45,1.00);
+  background-color: rgba(45, 45, 45, 1.00);
+}
 
+.main {
+  padding: 5px;
 }
-.main{
-	padding: 5px;
-}
+
 .links {
   color: #bbb;
-	font-family: Abel;
+  font-family: Abel;
 }
 
 .name {
   text-align: left;
-	font-family: Abel;
-	color: #bbb;
-	text-decoration: underline;
+  font-family: Abel;
+  color: #bbb;
+  font-size: 35px;
 }
 
 .links:hover {
@@ -29,6 +28,6 @@ html body {
 
 .picture {
   border-radius: 65px;
-	padding:1px;
-  border:1px solid #bbb;
+  padding: 1px;
+  border: 1px solid #bbb;
 }
